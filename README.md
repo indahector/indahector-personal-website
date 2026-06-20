@@ -11,13 +11,52 @@ Open `index.html` in a browser and it just works.
 
 ## Pages
 
-| File | Purpose |
-|------|---------|
-| `index.html` | Home — about, selected work, interests, education, contact |
-| `work.html` | Full project list |
-| `publications.html` | Peer-reviewed papers, talks, theses |
-| `writing.html` | Notes / science communication |
-| `404.html` | Friendly not-found page |
+The site is **bilingual**. English lives at the root; Spanish mirrors it under `es/`.
+A small **EN / ES toggle** in the top-right of every page links to its counterpart.
+
+| English (root) | Spanish (`es/`) | Purpose |
+|------|------|---------|
+| `index.html` | `es/index.html` | Home — about, selected work, interests, education, **Other projects**, **Other interests**, contact |
+| `work.html` | `es/work.html` | Full project list |
+| `publications.html` | `es/publications.html` | Peer-reviewed papers, talks, theses |
+| `writing.html` | `es/writing.html` | **Science communication / Divulgación** — notes & explainers |
+| `atmospheric-rivers.html` | `es/rios-atmosfericos.html` | Explainer article: *What is an atmospheric river?* |
+| `404.html` | `es/404.html` | Friendly not-found page |
+
+> Note: the science-communication page keeps the filename `writing.html` (so existing links/bookmarks still work); only its **label** is "Science communication" / "Divulgación".
+
+## How the pages are generated
+
+All HTML is produced by **`build.py`** — a small Python script that holds the
+content for both languages and stamps out every page with an identical
+nav / footer / language-toggle. This keeps the two language versions in sync.
+
+```bash
+python3 build.py        # regenerates all HTML files
+```
+
+### Show / hide the Spanish version
+
+At the top of `build.py` there's a single switch:
+
+```python
+SHOW_ES = False   # English only — no EN/ES toggle, no es/ pages
+# SHOW_ES = True  # publishes the Spanish mirror + the EN/ES toggle
+```
+
+All Spanish content always lives in `build.py`, so hiding it loses nothing.
+To bring Spanish back: set `SHOW_ES = True`, run `python3 build.py`, and
+uncomment the `es/` block in `sitemap.xml`.
+
+**Two ways to edit:**
+- **Content or structure change** → edit `build.py`, then re-run it. This is the
+  source of truth and keeps EN/ES consistent.
+- **Tiny one-off tweak** → you can edit a generated `.html` file directly. Just
+  remember a later `python3 build.py` will overwrite it, so fold lasting changes
+  back into `build.py`.
+
+To add a translated page, add its content block (both `en` and `es`) in `build.py`
+and a `render(...)` call, then update `sitemap.xml`.
 
 ## Supporting files
 
@@ -25,6 +64,7 @@ Open `index.html` in a browser and it just works.
 |------|---------|
 | `styles.css` | All styling. Design tokens (colors, fonts) live at the top in `:root` |
 | `script.js` | Mobile nav, contour-line signature, scroll reveal |
+| `build.py` | Generates all EN/ES pages (see "How the pages are generated") |
 | `assets/` | Photos, résumé/CV PDFs, favicon |
 | `CNAME` | Custom domain for GitHub Pages (`hectorindadiaz.com`) |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is (no Jekyll processing) |

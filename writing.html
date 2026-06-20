@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Writing — Héctor Inda Díaz</title>
-<meta name="description" content="Notes and explainers on atmospheric rivers, compound hazards, and making climate data usable — by Héctor Inda Díaz.">
+<title>Science communication — Héctor A. Inda Díaz</title>
+<meta name="description" content="Notes and explainers on atmospheric rivers, compound hazards, and making climate data usable.">
 <link rel="icon" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,14 +17,16 @@
 
 <header class="nav">
   <div class="nav-in">
-    <a class="brand" href="index.html">Héctor Inda Díaz<span class="dot">.</span></a>
-    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="navlinks"><span></span></button>
-    <nav><ul class="nav-links" id="navlinks">
+    <a class="brand" href="index.html">Héctor A. Inda Díaz<span class="dot">.</span></a>
+    <div class="nav-right">
+      <nav><ul class="nav-links" id="navlinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="work.html">Work</a></li>
       <li><a href="publications.html">Publications</a></li>
-      <li><a href="writing.html">Writing</a></li>
-    </ul></nav>
+      <li><a href="writing.html" class="active">Science communication</a></li>
+      </ul></nav>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="navlinks"><span></span></button>
+    </div>
   </div>
 </header>
 
@@ -32,35 +34,30 @@
   <section class="hero" style="border-bottom:1px solid var(--mist)">
     <svg class="hero-contours js-contours" data-stroke="#17605c" data-opacity="0.13" data-lines="14" aria-hidden="true"></svg>
     <div class="wrap" style="position:relative;z-index:2;padding-block:clamp(48px,8vw,84px)">
-      <span class="eyebrow">Writing</span>
+      <span class="eyebrow">Science communication</span>
       <h1 style="margin:.5rem 0 1rem;font-size:clamp(2.2rem,5vw,3.4rem)">Notes &amp; explainers</h1>
-      <p class="lead" style="max-width:54ch">Short pieces that try to make weather and climate science legible — the way I'd explain a result to a planner, an underwriter, or a curious friend, not another specialist.</p>
+      <p class="lead" style="max-width:54ch">Short pieces that try to make weather and climate science legible — the way I'd explain a result to a planner, a coffee grower, or a curious friend, not another specialist.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
-      <div class="callout reveal" style="margin-bottom:34px">This space is growing. The explainers below are anchored in real work — each one links to the research or tool behind it while the longer write-ups come together.</div>
-
       <div class="grid cols-2">
-        <a class="note-card reveal" href="https://doi.org/10.1029/2020JD033746" target="_blank" rel="noopener">
-          <div class="k"><span>Explainer · Atmospheric rivers</span><span>↗</span></div>
-          <h3>What an atmospheric river actually is</h3>
-          <p>The "rivers in the sky" that deliver much of the U.S. West Coast's water — and its floods. How we measure their size, and why the answer depends on how you choose to look.</p>
+        <a class="note-card reveal" href="atmospheric-rivers.html">
+          <div class="k"><span>Explainer · Atmospheric rivers</span><span>→</span></div>
+          <h3>What is an atmospheric river?</h3>
+          <p>The "rivers in the sky" that deliver much of the West Coast's water — and its floods. What they are, why they matter, and how a warming climate is changing them. <strong>Read on this site →</strong></p>
         </a>
-
-        <a class="note-card reveal" href="https://github.com/Eagle-Rock-Analytics/nyserda" target="_blank" rel="noopener">
+        <a class="note-card reveal" href="https://elcafedemitierra.com/rios-atmosfericos-cabanuelas-o-perjuicios-a-la-cosecha-de-cafe.html" target="_blank" rel="noopener">
+          <div class="k"><span>Published · El Café de Mi Tierra (ES)</span><span>↗</span></div>
+          <h3>Atmospheric rivers and the coffee harvest</h3>
+          <p>My Spanish-language feature for a coffee magazine: how winter atmospheric rivers — folk-predicted by the <em>cabañuelas</em> — damage Mexico's Pacific coffee harvest, and what producers can do about it.</p>
+        </a>
+        <!-- <a class="note-card reveal" href="https://github.com/Eagle-Rock-Analytics/nyserda" target="_blank" rel="noopener">
           <div class="k"><span>Explainer · Compound hazards</span><span>↗</span></div>
           <h3>When hazards stack: compound &amp; cascading events</h3>
           <p>A heatwave during a drought, or back-to-back storms, can be far worse than either alone. What "compound event" means, and how I detect them in decades of messy records.</p>
-        </a>
-
-        <a class="note-card reveal" href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023MS003793" target="_blank" rel="noopener">
-          <div class="k"><span>Case study · Modeling</span><span>↗</span></div>
-          <h3>Recreating California's 1997 New Year's flood</h3>
-          <p>Using a regionally refined Earth system model to replay one of the state's costliest floods — a "storyline" approach to understanding compound extremes in a warming climate.</p>
-        </a>
-
+        </a> -->
         <a class="note-card reveal" href="https://cal-adapt.org/" target="_blank" rel="noopener">
           <div class="k"><span>Practice · Data for decisions</span><span>↗</span></div>
           <h3>Making climate data usable for non-scientists</h3>
@@ -82,11 +79,10 @@
 
 <footer class="foot">
   <div class="wrap foot-in">
-    <span>© <span data-year>2025</span> Héctor Inda Díaz</span>
-    <span class="mono">Sacramento · Davis, CA</span>
+    <span>© <span data-year>2026</span> Héctor A. Inda Díaz</span>
+    <!-- <span class="mono">Sacramento · Davis, CA</span> -->
   </div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>

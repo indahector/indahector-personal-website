@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Work — Héctor Inda Díaz</title>
-<meta name="description" content="Selected projects in climate and weather data platforms, multi-hazard analysis, and numerical modeling by Héctor Inda Díaz.">
+<title>Work — Héctor A. Inda Díaz</title>
+<meta name="description" content="Selected projects in climate and weather data platforms, multi-hazard analysis, and numerical modeling.">
 <link rel="icon" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,14 +17,16 @@
 
 <header class="nav">
   <div class="nav-in">
-    <a class="brand" href="index.html">Héctor Inda Díaz<span class="dot">.</span></a>
-    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="navlinks"><span></span></button>
-    <nav><ul class="nav-links" id="navlinks">
+    <a class="brand" href="index.html">Héctor A. Inda Díaz<span class="dot">.</span></a>
+    <div class="nav-right">
+      <nav><ul class="nav-links" id="navlinks">
       <li><a href="index.html">Home</a></li>
-      <li><a href="work.html">Work</a></li>
+      <li><a href="work.html" class="active">Work</a></li>
       <li><a href="publications.html">Publications</a></li>
-      <li><a href="writing.html">Writing</a></li>
-    </ul></nav>
+      <li><a href="writing.html">Science communication</a></li>
+      </ul></nav>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="navlinks"><span></span></button>
+    </div>
   </div>
 </header>
 
@@ -34,152 +36,70 @@
     <div class="wrap" style="position:relative;z-index:2;padding-block:clamp(48px,8vw,84px)">
       <span class="eyebrow">Work</span>
       <h1 style="margin:.5rem 0 1rem;font-size:clamp(2.2rem,5vw,3.4rem)">Selected projects</h1>
-      <p class="lead" style="max-width:52ch">Most of this work shares a pattern: take large, messy environmental data and turn it into something validated, reproducible, and usable by the people who make decisions with it.</p>
+      <p class="lead" style="max-width:54ch">Most of this work shares a pattern: take large, messy environmental data and turn it into something validated, reproducible, and usable by the people who make decisions with it.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
-
-      <!-- Cal-Adapt -->
       <article class="work-entry reveal" id="cal-adapt">
-        <div class="meta">
-          <div class="role">Platform</div>
-          <div class="org">Eagle Rock Analytics</div>
-          <div class="yr">2023 — present</div>
-        </div>
-        <div class="body">
-          <h3>Cal-Adapt &amp; the Analytics Engine</h3>
-          <p>Co-develop California's cloud-based climate-data platform, delivering downscaled CMIP6 projections and analytical tools to energy utilities, regulators, and the public. I build the open-source Python packages and Jupyter notebooks that guide users through geospatial climate analysis — work that underpins California's Fifth Climate Change Assessment.</p>
-          <div class="chips"><span class="chip">Python</span><span class="chip">xarray</span><span class="chip">CMIP6</span><span class="chip">AWS</span><span class="chip">Jupyter</span><span class="chip">open source</span></div>
-          <div class="links"><a href="https://cal-adapt.org/" target="_blank" rel="noopener">cal-adapt.org ↗</a></div>
-        </div>
+        <div class="meta"><div class="role">Platform</div><div class="org">Eagle Rock Analytics</div><div class="yr">2023 — present</div></div>
+        <div class="body"><h3>Cal-Adapt &amp; the Analytics Engine</h3><p>Co-develop California's cloud-based climate-data platform, delivering downscaled CMIP6 projections and analytical tools to energy utilities, regulators, and the public. I build the open-source Python packages and Jupyter notebooks that guide users through geospatial climate analysis — work that underpins California's Fifth Climate Change Assessment.</p><div class="chips"><span class="chip">Python</span><span class="chip">xarray</span><span class="chip">CMIP6</span><span class="chip">AWS</span><span class="chip">Jupyter</span><span class="chip">open source</span></div><div class="links"><a href="https://cal-adapt.org/" target="_blank" rel="noopener">cal-adapt.org ↗</a></div></div>
       </article>
 
-      <!-- Historical Obs -->
       <article class="work-entry reveal" id="hist-obs">
-        <div class="meta">
-          <div class="role">Data platform</div>
-          <div class="org">Eagle Rock Analytics</div>
-          <div class="yr">2023 — present</div>
-        </div>
-        <div class="body">
-          <h3>Historical Observations Data Platform</h3>
-          <p>An open-source platform synthesizing ~15,900 surface weather stations from 27 networks across the Western U.S. (1980–2022). I helped design custom QA/QC protocols that reliably flag energy-relevant extremes — Santa Ana winds, heat, precipitation, solar radiation — so the dataset is both defensible and ready for downscaling work.</p>
-          <div class="chips"><span class="chip">Python</span><span class="chip">QA/QC</span><span class="chip">NetCDF</span><span class="chip">pandas</span><span class="chip">cloud storage</span></div>
-          <div class="links"><a href="https://github.com/Eagle-Rock-Analytics/historical-obs-platform" target="_blank" rel="noopener">GitHub ↗</a></div>
-        </div>
+        <div class="meta"><div class="role">Data platform</div><div class="org">Eagle Rock Analytics</div><div class="yr">2023 — present</div></div>
+        <div class="body"><h3>Historical Observations Data Platform</h3><p>An open-source platform synthesizing ~15,900 surface weather stations from 27 networks across the Western U.S. (1980–2022). I helped design custom QA/QC protocols that reliably flag energy-relevant extremes — Santa Ana winds, heat, precipitation, solar radiation — so the dataset is both defensible and ready for downscaling work.</p><div class="chips"><span class="chip">Python</span><span class="chip">QA/QC</span><span class="chip">NetCDF</span><span class="chip">pandas</span><span class="chip">cloud storage</span></div><div class="links"><a href="https://github.com/Eagle-Rock-Analytics/historical-obs-platform" target="_blank" rel="noopener">GitHub ↗</a></div></div>
       </article>
 
-      <!-- NYSERDA -->
       <article class="work-entry reveal" id="nyserda">
-        <div class="meta">
-          <div class="role">Toolkit</div>
-          <div class="org">Eagle Rock Analytics</div>
-          <div class="yr">2024 — present</div>
-        </div>
-        <div class="body">
-          <h3>New York Storm &amp; Compound-Event Toolkit</h3>
-          <p>A Python toolkit and notebook suite that ingests decades of NOAA / NCEI Storm Events records and detects compound hazards — co-occurring and back-to-back events — at the county level. The hard parts were the data and the definitions: schema drift across years, county-vs-NWS-zone geography, reporting bias over time, and making "compound event" an explicit, configurable definition. It runs operationally, refreshing classifications and stakeholder-ready HTML summaries as new data is published.</p>
-          <div class="chips"><span class="chip">Python</span><span class="chip">GeoPandas</span><span class="chip">Matplotlib</span><span class="chip">Bokeh</span><span class="chip">pipelines</span></div>
-          <div class="links"><a href="https://github.com/Eagle-Rock-Analytics/nyserda" target="_blank" rel="noopener">GitHub ↗</a></div>
-        </div>
+        <div class="meta"><div class="role">Toolkit</div><div class="org">Eagle Rock Analytics</div><div class="yr">2024 — present</div></div>
+        <div class="body"><h3>New York Storm &amp; Compound-Event Toolkit</h3><p>A Python toolkit and notebook suite that ingests decades of NOAA / NCEI Storm Events records and detects compound hazards — co-occurring and back-to-back events — at the county level. The hard parts were the data and the definitions: schema drift across years, county-vs-NWS-zone geography, reporting bias over time, and making "compound event" an explicit, configurable definition. It runs operationally, refreshing classifications and stakeholder-ready HTML summaries as new data is published.</p><div class="chips"><span class="chip">Python</span><span class="chip">GeoPandas</span><span class="chip">Matplotlib</span><span class="chip">Bokeh</span><span class="chip">pipelines</span></div><div class="links"><a href="https://github.com/Eagle-Rock-Analytics/nyserda" target="_blank" rel="noopener">GitHub ↗</a></div></div>
       </article>
 
-      <!-- Renewables -->
       <article class="work-entry reveal" id="renewables">
-        <div class="meta">
-          <div class="role">Climate × energy</div>
-          <div class="org">Eagle Rock Analytics</div>
-          <div class="yr">2023 — present</div>
-        </div>
-        <div class="body">
-          <h3>Renewable Generation Under a Changing Climate</h3>
-          <p>High-resolution hourly profiles of solar-PV and wind generation potential through end-of-century for the California Energy Commission's SB100 supply analysis. The focus is on extreme low-generation events — solar and wind "droughts," and their co-occurrence (<em>Dunkelflaute</em>) — that stress a zero-carbon grid.</p>
-          <div class="chips"><span class="chip">Python</span><span class="chip">xarray</span><span class="chip">time-series</span><span class="chip">reV</span><span class="chip">AWS</span></div>
-        </div>
+        <div class="meta"><div class="role">Climate × energy</div><div class="org">Eagle Rock Analytics</div><div class="yr">2023 — present</div></div>
+        <div class="body"><h3>Renewable Generation Under a Changing Climate</h3><p>High-resolution hourly profiles of solar-PV and wind generation potential through end-of-century for the California Energy Commission's SB100 supply analysis. The focus is on extreme low-generation events — solar and wind "droughts," and their co-occurrence (<em>Dunkelflaute</em>) — that stress a zero-carbon grid.</p><div class="chips"><span class="chip">Python</span><span class="chip">xarray</span><span class="chip">time-series</span><span class="chip">reV</span><span class="chip">AWS</span></div></div>
       </article>
 
-      <!-- Pyregence -->
-      <article class="work-entry reveal" id="pyregence">
-        <div class="meta">
-          <div class="role">Wildfire × weather</div>
-          <div class="org">Eagle Rock Analytics</div>
-          <div class="yr">2022 — present</div>
-        </div>
-        <div class="body">
-          <h3>Pyregence — Wildfire &amp; Climate</h3>
-          <p>Built a station-siting optimization algorithm and characterized the regional weather patterns that drive fire events, as part of California's Pyregence consortium. A good example of systems thinking — connecting upstream fire-weather conditions to downstream hydrologic and grid impacts.</p>
-          <div class="chips"><span class="chip">Python</span><span class="chip">optimization</span><span class="chip">geospatial</span><span class="chip">pattern recognition</span></div>
-          <div class="links"><a href="https://pyregence.org/" target="_blank" rel="noopener">pyregence.org ↗</a></div>
-        </div>
-      </article>
+      <!-- <article class="work-entry reveal" id="pyregence">
+        <div class="meta"><div class="role">Wildfire × weather</div><div class="org">Eagle Rock Analytics</div><div class="yr">2022 — present</div></div>
+        <div class="body"><h3>Pyregence — Wildfire &amp; Climate</h3><p>Built a station-siting optimization algorithm and characterized the regional weather patterns that drive fire events, as part of California's Pyregence consortium. A good example of systems thinking — connecting upstream fire-weather conditions to downstream hydrologic and grid impacts.</p><div class="chips"><span class="chip">Python</span><span class="chip">optimization</span><span class="chip">geospatial</span><span class="chip">pattern recognition</span></div><div class="links"><a href="https://pyregence.org/" target="_blank" rel="noopener">pyregence.org ↗</a></div></div>
+      </article> -->
 
-      <!-- Santa Clara -->
       <article class="work-entry reveal" id="santa-clara">
-        <div class="meta">
-          <div class="role">Forecast tooling</div>
-          <div class="org">Eagle Rock Analytics</div>
-          <div class="yr">2024 — present</div>
-        </div>
-        <div class="body">
-          <h3>Weather-Pattern Recognition for Santa Clara Watersheds</h3>
-          <p>A precipitation "forecast handbook" for the Santa Clara Valley Water District, using pattern recognition to link large-scale weather patterns to rainfall and runoff — so the district can act on a storm's forecast rather than react to its impacts.</p>
-          <div class="chips"><span class="chip">Python</span><span class="chip">downscaled models</span><span class="chip">hydrology</span><span class="chip">clustering</span></div>
-        </div>
+        <div class="meta"><div class="role">Forecast tooling</div><div class="org">Eagle Rock Analytics</div><div class="yr">2024 — present</div></div>
+        <div class="body"><h3>Weather-Pattern Recognition for Santa Clara Watersheds</h3><p>A precipitation "forecast handbook" for the Santa Clara Valley Water District, using pattern recognition to link large-scale weather patterns to rainfall and runoff — so the district can act on a storm's forecast rather than react to its impacts.</p><div class="chips"><span class="chip">Python</span><span class="chip">downscaled models</span><span class="chip">hydrology</span><span class="chip">clustering</span></div></div>
       </article>
 
-      <!-- SMUD -->
       <article class="work-entry reveal" id="smud">
-        <div class="meta">
-          <div class="role">Vulnerability assessment</div>
-          <div class="org">Eagle Rock Analytics × AECOM</div>
-          <div class="yr">2024 — present</div>
-        </div>
-        <div class="body">
-          <h3>SMUD Climate Vulnerability Assessment</h3>
-          <p>Climate projections for the Sacramento Municipal Utility District (1.5M+ customers), translating temperature, precipitation, wildfire, wind, and hydropower signals into infrastructure and operations guidance — framed for planning and executive audiences.</p>
-          <div class="chips"><span class="chip">Python</span><span class="chip">CMIP6</span><span class="chip">risk translation</span><span class="chip">stakeholder reports</span></div>
-        </div>
+        <div class="meta"><div class="role">Vulnerability assessment</div><div class="org">Eagle Rock Analytics × AECOM</div><div class="yr">2024 — present</div></div>
+        <div class="body"><h3>SMUD Climate Vulnerability Assessment</h3><p>Climate projections for the Sacramento Municipal Utility District (1.5M+ customers), translating temperature, precipitation, wildfire, wind, and hydropower signals into infrastructure and operations guidance — framed for planning and executive audiences.</p><div class="chips"><span class="chip">Python</span><span class="chip">CMIP6</span><span class="chip">risk translation</span><span class="chip">stakeholder reports</span></div></div>
       </article>
 
-      <!-- RRM-E3SM -->
       <article class="work-entry reveal" id="rrm-e3sm">
-        <div class="meta">
-          <div class="role">Postdoc · modeling</div>
-          <div class="org">Lawrence Berkeley National Lab</div>
-          <div class="yr">2022 — 2023</div>
-        </div>
-        <div class="body">
-          <h3>Regionally-Refined E3SM &amp; the 1997 California Flood</h3>
-          <p>Ported and ran the Regionally Refined E3SM model on the BigRed200 supercomputer, generating 200+ TB of historical and future output. I designed a 14 km regionally-refined grid and engineered Dask + SLURM pipelines across ~3,840 cores — cutting analysis of 200+ TB from months to about a week — and contributed to recreating California's 1997 New Year's flood in a regionally refined Earth system model.</p>
-          <div class="chips"><span class="chip">E3SM</span><span class="chip">Dask</span><span class="chip">SLURM / HPC</span><span class="chip">Fortran</span><span class="chip">CUDA</span><span class="chip">xarray</span></div>
-          <div class="links"><a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023MS003793" target="_blank" rel="noopener">JAMES paper ↗</a></div>
-        </div>
+        <div class="meta"><div class="role">Postdoc · modeling</div><div class="org">Lawrence Berkeley National Lab</div><div class="yr">2022 — 2023</div></div>
+        <div class="body"><h3>Regionally-Refined E3SM &amp; the 1997 California Flood</h3><p>Ported and ran the Regionally Refined E3SM model on the BigRed200 supercomputer, generating 200+ TB of historical and future output. I designed a 14 km regionally-refined grid and engineered Dask + SLURM pipelines across ~3,840 cores — cutting analysis of 200+ TB from months to about a week — and contributed to recreating California's 1997 New Year's flood in a regionally refined Earth system model.</p><div class="chips"><span class="chip">E3SM</span><span class="chip">Dask</span><span class="chip">SLURM / HPC</span><span class="chip">Fortran</span><span class="chip">CUDA</span><span class="chip">xarray</span></div><div class="links"><a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023MS003793" target="_blank" rel="noopener">JAMES paper ↗</a></div></div>
       </article>
-
     </div>
   </section>
 
   <section class="section" style="text-align:center">
     <div class="wrap">
       <p class="lead reveal" style="max-width:38ch;margin-inline:auto">Want the full record?</p>
-      <div class="actions reveal" style="justify-content:center;margin-top:18px">
-        <a class="btn btn-primary" href="assets/Resume_IndaDiaz.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
-        <a class="btn btn-ghost" href="assets/CV_IndaDiaz.pdf" target="_blank" rel="noopener">Academic CV (PDF)</a>
-        <a class="btn btn-ghost" href="publications.html">Publications</a>
-      </div>
+      <!-- <div class="actions reveal" style="justify-content:center;margin-top:18px"><a class="btn btn-primary" href="assets/Resume_IndaDiaz.pdf" target="_blank" rel="noopener">Résumé (PDF)</a><a class="btn btn-ghost" href="assets/CV_IndaDiaz.pdf" target="_blank" rel="noopener">Academic CV (PDF)</a><a class="btn btn-ghost" href="publications.html">Publications</a></div> -->
+      <!-- <div class="actions reveal" style="justify-content:center;margin-top:18px"><a class="btn btn-primary" href="assets/0.pdf" target="_blank" rel="noopener">Résumé (PDF)</a><a class="btn btn-ghost" href="assets/1.pdf" target="_blank" rel="noopener">Academic CV (PDF)</a><a class="btn btn-ghost" href="publications.html">Publications</a></div> -->
+      <div class="actions reveal" style="justify-content:center;margin-top:18px"><a class="btn btn-primary" href="assets/1.pdf" target="_blank" rel="noopener">Academic CV</a><a class="btn btn-ghost" href="publications.html">Publications</a></div>
     </div>
   </section>
 </main>
 
 <footer class="foot">
   <div class="wrap foot-in">
-    <span>© <span data-year>2025</span> Héctor Inda Díaz</span>
-    <span class="mono">Sacramento · Davis, CA</span>
+    <span>© <span data-year>2026</span> Héctor A. Inda Díaz</span>
+    <!-- <span class="mono">Sacramento · Davis, CA</span> -->
   </div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>
