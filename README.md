@@ -135,13 +135,7 @@ The `CNAME` file already tells GitHub which domain to use. You also need DNS
 records at your domain registrar:
 
 **Apex domain** (`hectorindadiaz.com`) → four `A` records:
-```
-185.199.108.153
-185.199.109.153
-185.199.110.153
-185.199.111.153
-```
-(Optionally add the matching `AAAA` records for IPv6.)
+
 
 **`www` subdomain** → one `CNAME` record pointing to `<your-username>.github.io`.
 
